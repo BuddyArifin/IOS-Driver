@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Test-Suite]" parallel="none">
+  <parameter name="platform" value="firefox"/>
+  <parameter name="nodeUrl" value="http://localhost:4444/wd/hub"/>
+  <test name="Firefox Test(failed)" parallel="none" preserve-order="true">
+    <parameter name="platform" value="firefox"/>
+    <parameter name="nodeUrl" value="http://localhost:4444/wd/hub"/>
+    <classes>
+      <class name="com.westernunion.feature.BrowserTest">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

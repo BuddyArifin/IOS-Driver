@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test-Suite" parallel="none">
+  <test name="IOS Test">
+    <parameter name="platform" value="IOS" />
+    <parameter name="nodeUrl" value="http://localhost:18001/wd/hub" />
+    <classes>
+      <class name="com.westernunion.feature.AllTest"/>
+    </classes>
+  </test>
+   
+  <test name="Android Test" >
+    <parameter name="platform" value="Android" />
+    <parameter name="nodeUrl" value="http://localhost:18001/wd/hub" />
+    <classes>"/Volumes/HD-PCTU3/workspace/ios.native"
+      <class name="com.westernunion.feature.AllTest" />
+    </classes>
+   </test> 
+  
+  <test name="Firefox Test">
+    <parameter name="platform" value="firefox" />
+    <parameter name="nodeUrl" value="http://localhost:4444/wd/hub" />
+    <classes>
+      <class name="com.westernunion.feature.BrowserTest"/>
+    </classes>
+  </test> <!-- Test -->
+    
+    
+</suite> <!-- Suite -->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Native-Suite]" parallel="none">
+  <parameter name="port" value="18001"/>
+  <parameter name="platform" value="firefox"/>
+  <parameter name="host" value="localhost"/>
+  <test name="IOS Test(failed)" parallel="none">
+    <parameter name="port" value="18001"/>
+    <parameter name="platform" value="ios"/>
+    <parameter name="host" value="localhost"/>
+    <classes>
+      <class name="com.westernunion.feature.AllTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.westernunion.feature.AllTest -->
+    </classes>
+  </test> <!-- IOS Test(failed) -->
+  <test name="Android Test(failed)" parallel="none">
+    <parameter name="port" value="18001"/>
+    <parameter name="platform" value="Android"/>
+    <parameter name="host" value="localhost"/>
+    <classes>
+      <class name="com.westernunion.feature.AllTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.westernunion.feature.AllTest -->
+    </classes>
+  </test> <!-- Android Test(failed) -->
+  <test name="Firefox Test(failed)" parallel="none">
+    <parameter name="port" value="18001"/>
+    <parameter name="platform" value="firefox"/>
+    <parameter name="host" value="localhost"/>
+    <classes>
+      <class name="com.westernunion.feature.BrowserTest">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.westernunion.feature.BrowserTest -->
+      <class name="com.westernunion.feature.AllTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.westernunion.feature.AllTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Native-Suite] -->

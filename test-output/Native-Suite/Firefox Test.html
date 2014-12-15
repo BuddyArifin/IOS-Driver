@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>TestNG:  Firefox Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Firefox Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 10 15:06:49 WIB 2014</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (59 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.westernunion.feature.BrowserTest.test()'><b>test</b><br>Test class: com.westernunion.feature.BrowserTest<br>Parameters: firefox, localhost, 18001</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Cannot cast null to DeviceType
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 46 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+	at com.iosdriver.util.CommonUtils.selectedPlatformServer(CommonUtils.java:116)
+	at com.westernunion.feature.BrowserTest.test(BrowserTest.java:17)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Cannot cast null to DeviceType
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at org.uiautomation.ios.server.command.uiautomation.NewSessionNHandler.handle(NewSessionNHandler.java:76)
+	at org.uiautomation.ios.server.command.BaseCommandHandler.handleAndRunDecorators(BaseCommandHandler.java:104)
+	at org.uiautomation.ios.server.servlet.IOSServlet.getResponse(IOSServlet.java:151)
+	at org.uiautomation.ios.server.servlet.IOSServlet.process(IOSServlet.java:82)
+	at org.uiautomation.ios.server.servlet.IOSServlet.doPost(IOSServlet.java:57)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:533)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:475)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:920)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:403)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:184)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:856)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:47)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:114)
+	at org.eclipse.jetty.server.Server.handle(Server.java:352)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:596)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1066)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:805)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:426)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:510)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.access$000(SelectChannelEndPoint.java:34)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:450)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112201817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112201817'><pre>org.openqa.selenium.SessionNotCreatedException: Cannot cast null to DeviceType
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 46 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+	at com.iosdriver.util.CommonUtils.selectedPlatformServer(CommonUtils.java:116)
+	at com.westernunion.feature.BrowserTest.test(BrowserTest.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Cannot cast null to DeviceType
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;maretskas-Mac-miniQA.local&apos;, ip: &apos;192.168.2.1&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.8.5&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: unknown
+	at org.uiautomation.ios.server.command.uiautomation.NewSessionNHandler.handle(NewSessionNHandler.java:76)
+	at org.uiautomation.ios.server.command.BaseCommandHandler.handleAndRunDecorators(BaseCommandHandler.java:104)
+	at org.uiautomation.ios.server.servlet.IOSServlet.getResponse(IOSServlet.java:151)
+	at org.uiautomation.ios.server.servlet.IOSServlet.process(IOSServlet.java:82)
+	at org.uiautomation.ios.server.servlet.IOSServlet.doPost(IOSServlet.java:57)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:533)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:475)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:920)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:403)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:184)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:856)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:47)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:114)
+	at org.eclipse.jetty.server.Server.handle(Server.java:352)
+	at org.eclipse.jetty.server.HttpConnection.handleRequest(HttpConnection.java:596)
+	at org.eclipse.jetty.server.HttpConnection$RequestHandler.content(HttpConnection.java:1066)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:805)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:218)
+	at org.eclipse.jetty.server.HttpConnection.handle(HttpConnection.java:426)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:510)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.access$000(SelectChannelEndPoint.java:34)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:40)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:450)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>com.westernunion.feature.BrowserTest@369ef286</td></tr>
+</table><p>
+</body>
+</html>

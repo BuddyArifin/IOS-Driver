@@ -1,0 +1,65 @@
+58:24:236 INFO ApplicationStore.<init>  App archive folder:/Volumes/HD-PCTU3/workspace/New-Work/ios.native/applications
+58:25:733 INFO IOSServer.initDriver  
+Beta features enabled (enabled by -beta flag): false
+Simulator enabled : true
+Inspector: http://0.0.0.0:18001/inspector/
+Tests can access the server at http://0.0.0.0:18001/wd/hub
+Server status: http://0.0.0.0:18001/wd/hub/status
+Connected devices: http://0.0.0.0:18001/wd/hub/devices/all
+Applications: http://0.0.0.0:18001/wd/hub/applications/all
+Capabilities: http://0.0.0.0:18001/wd/hub/capabilities/all
+Monitoring '/Volumes/HD-PCTU3/workspace/New-Work/ios.native/applications' for new applications
+Archived apps: /Volumes/HD-PCTU3/workspace/New-Work/ios.native/applications
+Build info: ios-driver 0.6.6-SNAPSHOT (built:20140512-1111,sha:3200431291ad1b53ecb4d539dfde6e56e44a212d)
+Running on: Mac OS X 10.8.5 (x86_64)
+Using java: 1.7.0_60
+Using Xcode install: /Applications/Xcode.app
+Using instruments: version:5.1.1, build: 55045
+Using iOS version 7.1
+iOS >= 6.0. Safari and hybrid apps are supported.
+
+Applications :
+--------------- 
+	CFBundleName=WesternUnion,CFBundleVersion=6001,/Users/maretskakirana/WesternUnion.app
+	CFBundleName=Safari,CFBundleVersion=9537.53,/Users/maretskakirana/.ios-driver/safariCopies/safari-7.1.app
+
+58:51:084 WARNING InstrumentsApple.start  instruments crashed (20 SEC)
+58:51:411 WARNING NewSessionNHandler.safeStart  Instruments failed to start in the allocated time ( 20sec):Didn't get the capability back.Most likely, instruments crashed at startup.
+59:38:404 SEVERE IOSServlet.getResponse  POST:/session/313ba373-40ac-47de-bfc1-b100c4279d22/window
+	body:{"name":"webview"}  in 0ms
+59:38:409 WARNING IOSServlet.doPost  org.openqa.selenium.WebDriverException: Error processing response.bug.No enum constant org.uiautomation.ios.UIAModels.configuration.WorkingMode.webview
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'maretskas-Mac-miniQA.local', ip: '192.168.2.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.8.5', java.version: '1.7.0_60'
+Driver info: driver.version: unknown
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'maretskas-Mac-miniQA.local', ip: '192.168.2.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.8.5', java.version: '1.7.0_60'
+Driver info: driver.version: unknown
+02:16:515 INFO SelendroidLauncher.lauchServer  Starting selendroid-server port 4444
+02:16:563 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk META-INF/MANIFEST.MF
+02:17:294 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk META-INF/CERT.RSA
+02:17:318 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk META-INF/CERT.SF
+02:17:338 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk META-INF/ANDROIDD.SF
+02:17:362 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk META-INF/ANDROIDD.RSA
+02:17:387 INFO ShellCommand.exec  executing command: /usr/libexec/java_home
+02:18:230 INFO ShellCommand.exec  executing command: /Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/bin/jarsigner -sigalg MD5withRSA -digestalg SHA1 -signedjar /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/resigned-WU_R3_MOBILE_Release4000.apk -storepass android -keystore /Users/maretskakirana/.android/debug.keystore /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk androiddebugkey
+02:23:767 INFO SelendroidServerBuilder.signTestServer  App signing output: jar signed.
+
+Warning: 
+No -tsa or -tsacert is provided and this jar is not timestamped. Without a timestamp, users may not be able to validate this jar after the signer certificate's expiration date (2043-11-27) or after any future revocation date.
+
+02:23:767 INFO SelendroidServerBuilder.signTestServer  The app has been signed: /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/resigned-WU_R3_MOBILE_Release4000.apk
+02:23:768 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt dump badging /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/resigned-WU_R3_MOBILE_Release4000.apk
+02:23:774 INFO SelendroidStandaloneDriver.initApplicationsUnderTest  Ignoring app because an error occurred reading the app details: /Volumes/HD-PCTU3/workspace/New-Work/ios.native/src/main/resources/WU_R3_MOBILE_Release4000.apk
+02:23:774 INFO SelendroidStandaloneDriver.initApplicationsUnderTest  The base package name of the apk resigned-WU_R3_MOBILE_Release4000.apk cannot be extracted.
+02:23:776 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/android-driver5330062200040671320.apk META-INF/MANIFEST.MF
+02:23:781 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/android-driver5330062200040671320.apk META-INF/CERT.RSA
+02:23:787 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/android-driver5330062200040671320.apk META-INF/CERT.SF
+02:23:792 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/android-driver5330062200040671320.apk META-INF/ANDROIDD.SF
+02:23:798 INFO ShellCommand.exec  executing command: /Users/maretskakirana/Documents/adt-bundle-mac-x86_64-20130729/sdk/build-tools/android-4.3/aapt remove /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/android-driver5330062200040671320.apk META-INF/ANDROIDD.RSA
+02:23:803 INFO ShellCommand.exec  executing command: /Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/bin/jarsigner -sigalg MD5withRSA -digestalg SHA1 -signedjar /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/resigned-android-driver5330062200040671320.apk -storepass android -keystore /Users/maretskakirana/.android/debug.keystore /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/android-driver5330062200040671320.apk androiddebugkey
+02:24:399 INFO SelendroidServerBuilder.signTestServer  App signing output: jar signed.
+
+Warning: 
+No -tsa or -tsacert is provided and this jar is not timestamped. Without a timestamp, users may not be able to validate this jar after the signer certificate's expiration date (2043-11-27) or after any future revocation date.
+
+02:24:399 INFO SelendroidServerBuilder.signTestServer  The app has been signed: /var/folders/k4/v4w8lys15s9gcm0z8m1209qc0000gn/T/resigned-android-driver5330062200040671320.apk
